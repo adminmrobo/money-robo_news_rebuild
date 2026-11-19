@@ -97,36 +97,40 @@ STAGES = [
         ('2026-10-01','Superpowers + Ralph Loop 도입','3ec17a4520ed80f4b539eb8871691da4'),
         ('2026-10-06','주가 x 공시 시각화','3f117a4520ed808195aacb2ca3c5de06'),
         ('2026-10-20','국장 상장기업 all ready + 미장 준비','3fa17a4520ed808e9348eb5434c079cb')]),
- dict(k='s8', n=8, name='money-robo.com 정리 · LLM 기사 자동 발행', st='run', stl='진행 중', s='2026-10-21', e='2026-11-18',
-  gate='G8 — 검증을 통과한 LLM 기사만 money-robo.com에 자동으로 싣는다', gres='진행 중 · 11/18 기준 51종 자동 발행 대상',
+ dict(k='s8', n=8, name='money-robo.com 정리 · LLM 기사 자동 발행', st='run', stl='진행 중', s='2026-10-21', e='2026-11-19',
+  gate='G8 — 검증을 통과한 LLM 기사만 money-robo.com에 자동으로 싣는다', gres='진행 중 · 11/19 105종 전체 자동 발행 설정, 첫 운영 실행 신규 게시 0건',
   out='공시봇 23개 정상화, 블로그 전체 백업·분류, 기사 검증 게이트, WordPress 자동 게시',
   say='드디어 엔진이 money-robo.com 본지에 닿았습니다. 새 기사를 싣기 전에 옛 기사부터 백업하고, 숫자가 원문과 다르면 아예 싣지 않는 검증 게이트를 먼저 세운 순서가 마음에 듭니다.',
   did=['공시봇 23개·DART 수집·이메일 발송 정상화, 코스피·코스닥 시황 메일링 복구 (10/21~29)',
        'WordPress 게시물 61,767건 백업(누락·중복·오류 0건), 2025년 이전 27,262건 분류 — 비공개 추천 1,210 · 공개 유지 8,877 · 수동 검토 17,175 (10/28)',
        'LLM 기사 1,000건 검증 중 998건 정상, 운영 기준 5,197건 중 5,101건 통과 — 계약금액 1,147억을 114억으로 쓴 기사는 자동 차단 (10/29)',
        '단일판매·공급계약 자동 게시 시작 — 30분 주기, 하루 최대 5건, 정정공시는 전후 대조 필수 (11/5)',
-       '신규 14종 공개 게시(11/17) → 기존 31종 + 신규 20종 = 51종 자동 발행 대상, 발행 조건 15개 항목 모두 통과 (11/18)'],
-  issue='Cafe24 서버의 이미지 업로드 오류(HTTP 500)가 아직 풀리지 않아, 메일로는 나갔지만 블로그에 못 실린 공시 13건이 대기 중입니다. 오래된 기사 비공개 전환은 아직 시범 10건 검증까지만 했습니다.',
+       '신규 14종 공개 게시(11/17) → 기존 31종 + 신규 20종 = 51종 자동 발행 대상, 발행 조건 15개 항목 모두 통과 (11/18)',
+       '신규 52종을 공통 기사 생성 경로에 잇고 잠정실적·정기 실적보고서 2종을 각자의 검증 경로로 연결 — 105종 전체 자동 발행 설정, 운영 설정 모의 시험 105/105종 통과 (11/19)',
+       '같은 날 오후 2시 54분 첫 운영 실행은 정상 종료, 신규 게시 0건 — 평가한 대표이사 변경 1건은 주가 차트를 만들지 못해 보류 (11/19)',
+       '공시봇 메일 발송 기준을 한국시간 당일 공시로 통일, 주주총회 소집공고는 표지 다음 본문에서 추출하도록 보완 (11/19)'],
+  issue='105종이 모두 켜졌지만 첫 운영 실행의 실제 게시는 0건이었고, 공개된 샘플 기사는 27건입니다. 설정이 켜진 것과 기사가 실제로 실리는 것은 다른 일이라 며칠 운영을 지켜봐야 합니다. 10월 말부터 보고된 Cafe24 이미지 업로드 오류로 블로그에 못 실린 공시 13건, 오래된 기사 비공개 전환(시범 10건 검증까지)도 남아 있습니다.',
   refs=[('2026-10-27','블로그 정리 및 공시 서비스 개편 계획 (~11/02)','40617a4520ed8045b0a2f71cd712d420'),
         ('2026-10-28','기존 콘텐츠 백업·아카이브 / 신규 공시 서비스 개편 준비','40717a4520ed80d2b115d41185f11a6d'),
         ('2026-10-29','LLM 기사 검증·WP 연동','40817a4520ed800b89c6e6247c3e46da'),
         ('2026-11-05','단일판매공급계약 ← LLM 자동 포스팅 완료','40f17a4520ed80ba8af7f140e56a8c2f'),
         ('2026-11-17','LLM 자동 포스팅 14개 유형 완','41817a4520ed80d3ae10ddca3e13aefe'),
-        ('2026-11-18','LLM 자동 포스팅 51종 완(51/108)','41c17a4520ed80228f27ec3c1b315bb3')]),
+        ('2026-11-18','LLM 자동 포스팅 51종 완(51/108)','41c17a4520ed80228f27ec3c1b315bb3'),
+        ('2026-11-19','LLM 공시기사 자동 포스팅 운영 보고 105종 완','41d17a4520ed80d0919ef288332745e3')]),
 ]
 
 PLANS = [
- dict(k='p1', name='105종 자동 포스팅 체계', src='11/17·11/18 리포트의 “최종 목표”',
-  body='Company Story가 카드로 지원하는 105종 전체를 자동 포스팅으로 잇습니다. 남은 것은 기사 생성 경로가 아직 없는 52종, 실적 별도 경로 2종, 그리고 잠정실적·경영권 분쟁·기술 라이선스 같은 우선 유형입니다.'),
+ dict(k='p1', name='105종 자동 발행 — 실제 게시 안정화', src='11/19 리포트 — 설정 105/105종, 첫 운영 실행 신규 게시 0건',
+  body='105종 전체의 자동 발행 설정은 11/19에 끝났습니다. 다음은 실제로 기사가 꾸준히 실리는지 확인하는 일입니다. 첫 실행에서 차트를 못 만들어 보류된 건처럼 보류 사유를 줄이고, 공개 샘플이 27건뿐인 유형별 기사도 늘려야 합니다. 하루 최대 4건·회차당 1건 한도는 유지 중입니다.'),
  dict(k='p2', name='관심종목 피드 · 이전 공시와 비교', src='9/10 리포트의 “다음 기능”',
   body='관심 기업만 골라 공시를 시간순으로 모아 보고, 같은 회사의 같은 유형 공시를 50억 → 80억 → 120억처럼 이어서 보여 줍니다. 공시를 “읽어 주는” 서비스에서 기업의 변화를 “추적하는” 서비스로 가는 단계입니다.'),
- dict(k='p3', name='미국 증시로 Company Story 확장', src='10/20 리포트의 “향후 작업”',
-  body='SEC 공시와 미국 주가 수집 구조를 검토하고 주요 상장사부터 넓힙니다. money-robo.com의 기존 미국 주식시장 메뉴(개미의 주판, 미국 증시 Brief)와 만나는 지점입니다.'),
+ dict(k='p3', name='미국 증시로 Company Story 확장', src='10/20 리포트의 “향후 작업”, 11/19 리포트의 다우존스·나스닥 데이터 확보 검토',
+  body='SEC 공시와 미국 주가 수집 구조를 검토하고 주요 상장사부터 넓힙니다. 11/19에는 다우존스·나스닥 시장 데이터를 확보할 방법을 찾는 일이 다음 작업으로 올라왔습니다. money-robo.com의 기존 미국 주식시장 메뉴(개미의 주판, 미국 증시 Brief)와 만나는 지점입니다.'),
  dict(k='p4', name='money-robo.com 구조 레노베이션', src='발행인 구상 — 10/27 개편 계획과 위 세 가지를 묶음',
   body='오래된 단순 전달형 기사는 비공개로 돌리고 원천 데이터는 남기며, 23개 뉴스봇은 단계적으로 줄이고, 증권기사·기업 페이지·관심종목을 Company Story와 한 동선으로 잇습니다. 아래 “사이트 구조 레노베이션”에 지금 메뉴와 바꿀 방향을 나란히 놓았습니다.'),
 ]
 
-REPS = {'s1': ['상장사 기업개황을 LLM으로 정리해 검색 결과에 붙이는 작업이 완료됐습니다. 11/20에 [기업 개황] 버튼을 연동했고, 11/27에 빠져 있던 340건을 보충했습니다. 이를 보고합니다.'], 's2': ['단일판매·배당·분기·반기·사업보고서·손익구조 30% 변동, 6개 유형의 공시 요약 자동화가 완료됐습니다. 5분마다 새 공시를 요약해 검색에 올립니다. 이를 보고합니다.', '운영 비용은 2개 유형이 돌던 12월 기준 하루 약 0.9달러입니다.'], 's3': ['최대주주변동부터 투자판단관련주요경영사항까지, 23번째 유형의 요약 자동화가 완료됐습니다. 주주총회소집공고는 LLM 요약을 보류했습니다. 이를 보고합니다.'], 's4': ['공시를 단순 공시형과 복합 보고서형으로 나누고 MCP 경로와 자동 fallback을 붙이는 11단계 전환이 5/8에 완료됐습니다. 이를 보고합니다.', '이어서 요약 대기 시간을 30초대에서 1~5초로, 첫 클릭 지연을 28초에서 126ms로 줄였습니다.'], 's5': ['공시가 들어오면 기사가 저절로 쓰이는 우측 패널, 이메일 회원가입·로그인, 관리자 페이지 개설이 완료됐습니다. 관리자 페이지는 7/13에 열었습니다. 이를 보고합니다.'], 's6': ['사업·반기·분기보고서 실적 카드화와 과거 데이터 backfill이 완료됐습니다. 카드 지원 유형은 105종입니다. 이를 보고합니다.', '삼성생명·삼성화재·DSR제강의 매출·영업이익·순이익 9개 지표를 DART 원문과 대조해 모두 일치함을 확인했습니다.'], 's7': ['국내 KOSPI·KOSDAQ 상장사 2,611개를 Company Story에 등록하고 공시·주가 자동 갱신 예약까지 완료됐습니다. 이를 보고합니다.', '공시 뒤 주가 반응은 Tier1 10개 종목 11,514건을 먼저 계산해 두었습니다.'], 's8': ['money-robo.com 게시물 61,767건 백업, LLM 기사 검증 게이트, WordPress 자동 게시가 완료됐습니다. 11/18 기준 51종이 자동 발행 대상입니다. 이를 보고합니다.', '다만 Cafe24 이미지 업로드 오류로 메일로만 나간 공시 13건은 아직 블로그에 싣지 못했습니다.']}
+REPS = {'s1': ['상장사 기업개황을 LLM으로 정리해 검색 결과에 붙이는 작업이 완료됐습니다. 11/20에 [기업 개황] 버튼을 연동했고, 11/27에 빠져 있던 340건을 보충했습니다. 이를 보고합니다.'], 's2': ['단일판매·배당·분기·반기·사업보고서·손익구조 30% 변동, 6개 유형의 공시 요약 자동화가 완료됐습니다. 5분마다 새 공시를 요약해 검색에 올립니다. 이를 보고합니다.', '운영 비용은 2개 유형이 돌던 12월 기준 하루 약 0.9달러입니다.'], 's3': ['최대주주변동부터 투자판단관련주요경영사항까지, 23번째 유형의 요약 자동화가 완료됐습니다. 주주총회소집공고는 LLM 요약을 보류했습니다. 이를 보고합니다.'], 's4': ['공시를 단순 공시형과 복합 보고서형으로 나누고 MCP 경로와 자동 fallback을 붙이는 11단계 전환이 5/8에 완료됐습니다. 이를 보고합니다.', '이어서 요약 대기 시간을 30초대에서 1~5초로, 첫 클릭 지연을 28초에서 126ms로 줄였습니다.'], 's5': ['공시가 들어오면 기사가 저절로 쓰이는 우측 패널, 이메일 회원가입·로그인, 관리자 페이지 개설이 완료됐습니다. 관리자 페이지는 7/13에 열었습니다. 이를 보고합니다.'], 's6': ['사업·반기·분기보고서 실적 카드화와 과거 데이터 backfill이 완료됐습니다. 카드 지원 유형은 105종입니다. 이를 보고합니다.', '삼성생명·삼성화재·DSR제강의 매출·영업이익·순이익 9개 지표를 DART 원문과 대조해 모두 일치함을 확인했습니다.'], 's7': ['국내 KOSPI·KOSDAQ 상장사 2,611개를 Company Story에 등록하고 공시·주가 자동 갱신 예약까지 완료됐습니다. 이를 보고합니다.', '공시 뒤 주가 반응은 Tier1 10개 종목 11,514건을 먼저 계산해 두었습니다.'], 's8': ['money-robo.com 게시물 61,767건 백업, LLM 기사 검증 게이트, WordPress 자동 게시가 완료됐습니다. 11/19에는 105종 전체의 자동 발행 설정까지 완료됐습니다. 이를 보고합니다.', '다만 같은 날 첫 운영 실행의 신규 게시는 0건이었습니다. 평가한 1건은 주가 차트를 만들지 못해 보류했습니다.']}
 # ---------------- 렌더 도우미 ----------------
 def esc(s): return html.escape(s, quote=True)
 def chip(st, stl): return f'<span class="st {st}">{esc(stl)}</span>'
@@ -173,13 +177,13 @@ def gantt():
         o.append(f'<a href="#{s["k"]}"><rect x="{x1:.1f}" y="{y+5}" width="{max(x2-x1,4):.1f}" height="19" rx="5" fill="{col}" opacity=".88"><title>S{s["n"]} {esc(s["name"])} · {s["s"]} ~ {s["e"]}</title></rect></a>')
     # 예정 띠
     y = top + len(rows) * rh
-    xs = X(D(2026, 11, 19))
+    xs = X(D(2026, 11, 20))
     o.append(f'<rect x="{xs:.1f}" y="{y+5}" width="{W-R-xs:.1f}" height="19" rx="5" fill="#fff" stroke="#8a96a3" stroke-dasharray="5 4"/>')
     o.append(f'<text x="8" y="{y+19}" font-size="13" fill="#5b6874">다음 단계 (날짜 미정)</text>')
-    o.append(f'<text x="{xs+8:.1f}" y="{y+19}" font-size="12" fill="#5b6874">105종·관심종목·미장·개편</text>')
-    xt = X(D(2026, 11, 18))
+    o.append(f'<text x="{xs+8:.1f}" y="{y+19}" font-size="12" fill="#5b6874">발행 안정화·관심종목·미장·개편</text>')
+    xt = X(D(2026, 11, 19))
     o.append(f'<line x1="{xt:.1f}" y1="{top-4}" x2="{xt:.1f}" y2="{H-34}" stroke="#c9302c" stroke-width="2"/>')
-    o.append(f'<text x="{xt-4:.1f}" y="{H-18}" font-size="12" fill="#c9302c" text-anchor="end">기준일 2026-11-18</text>')
+    o.append(f'<text x="{xt-4:.1f}" y="{H-18}" font-size="12" fill="#c9302c" text-anchor="end">기준일 2026-11-19</text>')
     o.append('</svg>')
     return ''.join(o)
 
@@ -191,13 +195,13 @@ NAV = [('#concl', '결론'), ('#map', '로드맵 지도'), ('#status', '스테�
 B.append('<nav class="top" aria-label="이 쪽 차례"><div class="wrap"><a class="logo" href="#top">Money-Robo 로드맵</a>'
          + ''.join(f'<a class="l" href="{h}">{t}</a>' for h, t in NAV) + '</div></nav><div id="prog" aria-hidden="true"></div>')
 
-KPI = [('139', '데일리 리포트 (2025-11-18 ~ 2026-11-18)', 'i'), ('8', '스테이지 — 7개 완료, 1개 진행 중', 'g'),
-       ('2,611', '검색에 등록한 국내 상장사', 'i'), ('105종', 'Company Story 카드 지원 공시 유형', 'm'),
-       ('51종', 'money-robo.com 자동 발행 대상 (11/18)', 'g'), ('61,767', '백업을 마친 기존 블로그 게시물', 'a')]
+KPI = [('140', '데일리 리포트 (2025-11-18 ~ 2026-11-19)', 'i'), ('8', '스테이지 — 7개 완료, 1개 진행 중', 'g'),
+       ('2,611', '검색에 등록한 국내 상장사', 'i'), ('27건', '공개된 LLM 공시기사 샘플 (11/19)', 'm'),
+       ('105종', 'money-robo.com 자동 발행 설정 (11/19)', 'g'), ('61,767', '백업을 마친 기존 블로그 게시물', 'a')]
 B.append('<header class="hero" id="top"><div class="wrap"><div class="hero-text">'
- '<div class="eyebrow">PUBLISHER BRIEFING · 01 · 기준일 2026-11-18</div>'
+ '<div class="eyebrow">PUBLISHER BRIEFING · 01 · 기준일 2026-11-19</div>'
  '<h1>공시봇에서 Company Story까지 — 발행인이 본 1년의 로드맵</h1>'
- '<p class="coreq">Money-Robo 발행인이 김 연구원의 데일리 리포트 139건(2025-11-18 「기업개황 - LLM 데이터 처리」부터 2026-11-18 「LLM 자동 포스팅 51종」까지)을 여덟 개 스테이지로 묶어 읽었습니다. 큰 그림은 하나입니다. money-robo.com을 공시 데이터 위에서 다시 짓는 일입니다.</p>'
+ '<p class="coreq">Money-Robo 발행인이 김 연구원의 데일리 리포트 140건(2025-11-18 「기업개황 - LLM 데이터 처리」부터 2026-11-19 「LLM 공시기사 자동 포스팅 운영 보고 105종 완」까지)을 여덟 개 스테이지로 묶어 읽었습니다. 큰 그림은 하나입니다. money-robo.com을 공시 데이터 위에서 다시 짓는 일입니다.</p>'
  '</div><div class="kpis">' + ''.join(f'<div class="kpi {c}"><b>{v}</b><span>{t}</span></div>' for v, t, c in KPI) + '</div>'
  '<p class="fn">숫자는 모두 김 연구원의 노션 데일리 리포트에 적힌 값입니다. 발행인이 새로 계산한 값은 없고, 표기가 서로 다른 곳은 “확인할 것”에 따로 모았습니다.</p>'
  '</div></header>')
@@ -205,9 +209,9 @@ B.append('<header class="hero" id="top"><div class="wrap"><div class="hero-text"
 B.append(lv('concl', '결론 먼저 — 오늘 보고의 세 줄',
  '<div class="box3"><h3>발행인의 세 줄</h3><ol>'
  '<li><b>엔진은 섰습니다.</b> 공시를 받아 요약하고, 카드로 바꾸고, 원문 숫자와 대조해 틀리면 막는 흐름이 국내 상장사 2,611개 위에서 돌아갑니다 (S1~S7).</li>'
- '<li><b>이제 본지에 닿았습니다.</b> 검증을 통과한 LLM 기사가 money-robo.com에 자동으로 실리기 시작했고, 11/18 기준 51종이 자동 발행 대상입니다 (S8).</li>'
- '<li><b>남은 일은 “사이트를 다시 짓는 것”입니다.</b> 105종 전체 연결, 관심종목·이전 공시 비교, 미국 증시, 그리고 오래된 기사 정리와 메뉴 개편을 한 동선으로 묶어야 합니다 (다음 단계).</li></ol></div>'
- + talk(('kim', '2025-11-18 기업개황 작업부터 2026-11-18 LLM 자동 포스팅 51종까지, 데일리 리포트 139건 분량의 작업이 정리됐습니다. 이를 보고합니다.'),
+ '<li><b>이제 본지에 닿았습니다.</b> 검증을 통과한 LLM 기사가 money-robo.com에 자동으로 실리기 시작했고, 11/19에 105종 전체가 자동 발행 설정으로 켜졌습니다. 다만 첫 운영 실행의 실제 게시는 0건이라 운영을 지켜봐야 합니다 (S8).</li>'
+ '<li><b>남은 일은 “사이트를 다시 짓는 것”입니다.</b> 105종 실제 게시 안정화, 관심종목·이전 공시 비교, 미국 증시, 그리고 오래된 기사 정리와 메뉴 개편을 한 동선으로 묶어야 합니다 (다음 단계).</li></ol></div>'
+ + talk(('kim', '2025-11-18 기업개황 작업부터 2026-11-19 자동 발행 105종 설정까지, 데일리 리포트 140건 분량의 작업이 정리됐습니다. 이를 보고합니다.'),
         ('pub', '이 쪽은 김 연구원의 결과물을 “평가”하려는 문서가 아닙니다. 1년 동안 무엇이 어떤 순서로 쌓였는지 발행인이 한눈에 보고, 다음 관문에서 무엇을 정해야 하는지 고르려는 지도입니다.'))
  + talk(('q', '공시봇은 원래 있지 않았나요? 무엇이 달라진 건가요?'),
         ('kim', '예전 공시봇 23개는 정해진 틀에 숫자를 끼워 기사를 찍었습니다. 지금은 LLM이 원문을 읽고 쓰되, 숫자는 원문과 기계로 대조해 하나라도 다르면 싣지 않도록 바꾸는 작업이 완료됐습니다. 이를 보고합니다.'),
@@ -227,7 +231,7 @@ B.append(lv('map', '로드맵 지도 — 어디부터 보시면 되나',
 # 현황 표
 rows = ''.join(f'<tr><td><a href="#{s["k"]}"><b>S{s["n"]}</b> {esc(s["name"])}</a></td><td>{chip(s["st"], s["stl"])}</td><td class="num nw">{s["s"][2:].replace("-",".")} ~ {s["e"][2:].replace("-",".")}</td><td>{esc(s["gate"])}<br><span class="small muted">{esc(s["gres"])}</span></td></tr>' for s in STAGES)
 rows += ''.join(f'<tr><td><a href="#{p["k"]}">{esc(p["name"])}</a></td><td>{chip("plan","예정")}</td><td class="muted">날짜 미정</td><td class="small muted">{esc(p["src"])}</td></tr>' for p in PLANS)
-B.append(lv('status', '스테이지 현황 — 2026-11-18 기준',
+B.append(lv('status', '스테이지 현황 — 2026-11-19 기준',
  '<div class="tw"><table class="tb"><thead><tr><th>스테이지</th><th>상태</th><th>기간</th><th>관문과 결과</th></tr></thead><tbody>' + rows + '</tbody></table></div>'
  '<p class="fn">기간은 각 스테이지에 속한 데일리 리포트의 첫 날짜와 마지막 날짜입니다. 관문(G1~G8) 이름은 발행인이 결과물을 보고 붙였습니다.</p>'))
 
@@ -255,7 +259,7 @@ def bar(lbl, a, b, unit, mx, note, better='down'):
     return (f'<div class="nb"><div class="nh"><b>{esc(lbl)}</b><span class="small muted">{esc(note)}</span></div>'
             f'<div class="nrow"><span class="nl">전</span><div class="track"><div class="fill" style="width:{pa:.1f}%;background:#c9b8a8"></div></div><span class="num nv">{a:,}{unit}</span></div>'
             f'<div class="nrow"><span class="nl">후</span><div class="track"><div class="fill" style="width:{max(pb,0.6):.1f}%;background:#13733a"></div></div><span class="num nv">{b:,}{unit}</span></div></div>')
-cov = [('자동 발행 활성', 51, '#13733a'), ('실적 별도 경로', 2, '#1e55c8'), ('기사 경로 미연결', 52, '#c8cfd6')]
+cov = [('11/18까지 활성', 51, '#13733a'), ('11/19 신규 연결', 52, '#3fa36b'), ('실적 검증 경로 (잠정·정기)', 2, '#1e55c8')]
 covbar = '<div class="covbar">' + ''.join(f'<div style="flex:{n};background:{c}" title="{t} {n}종"></div>' for t, n, c in cov) + '</div>' + \
          '<div class="covleg">' + ''.join(f'<span><i style="background:{c}"></i>{t} <b class="num">{n}종</b></span>' for t, n, c in cov) + '</div>'
 B.append(lv('nums', '숫자로 본 변화 — 리포트에 적힌 전후 값',
@@ -265,8 +269,8 @@ B.append(lv('nums', '숫자로 본 변화 — 리포트에 적힌 전후 값',
  + bar('Company Story 검색', 2000, 10, 'ms', 2000, 'S7 · 10/6')
  + bar('카드 지원 공시 유형', 77, 105, '종', 105, 'S6 · 9/10', 'up')
  + '</div>'
- '<h3>자동 발행으로 이어진 정도 — 관리 대상 105종 중</h3>' + covbar
- + '<p class="fn">11/18 리포트 본문 표 기준(51 + 2 + 52 = 105종). 같은 리포트 제목에는 “51/108”로 적혀 있어 분모가 다릅니다 — “확인할 것” 참조.</p>'
+ '<h3>자동 발행 설정 — 105종 중 105종 (11/19)</h3>' + covbar
+ + '<p class="fn">11/19 리포트 기준 51 + 52 + 2 = 105종. 설정이 켜졌다는 뜻이며, 같은 날 첫 운영 실행의 실제 신규 게시는 0건, 공개 샘플 기사는 27건입니다.</p>'
  '<div class="kpis k5" style="margin-top:16px">'
  '<div class="kpi g"><b>5,101</b><span>LLM 기사 검증 통과 / 운영 기준 5,197건 (10/29)</span></div>'
  '<div class="kpi i"><b>998</b><span>1,000건 표본 검증 중 정상 (10/29)</span></div>'
@@ -290,12 +294,12 @@ B.append(lv('stages', '스테이지별 보기 — S1부터 S8까지', ''.join(sd
 # 다음 단계
 nx = ''.join(f'<div class="planbox" id="{p["k"]}"><h4>{chip("plan","예정")} {esc(p["name"])}</h4><p>{esc(p["body"])}</p><p class="small muted">근거 · {esc(p["src"])}</p></div>' for p in PLANS)
 B.append(lv('next', '다음 단계 — 리포트에 적힌 “앞으로 할 일”', nx
- + talk(('kim', '다음 작업으로 105종 자동 포스팅, 관심종목 피드·이전 공시 비교, 미국 증시 확장의 방향 정리가 완료됐습니다. 일정은 아직 정하지 않았습니다. 이를 보고합니다.'),
+ + talk(('kim', '105종 자동 발행 설정이 11/19에 완료됐습니다. 다음 작업으로 실제 게시 안정화, 관심종목 피드·이전 공시 비교, 다우존스·나스닥 데이터 확보를 포함한 미국 증시 확장을 적어 두었습니다. 일정은 아직 정하지 않았습니다. 이를 보고합니다.'),
         ('pub', '방향은 있지만 일정표가 없어서, 발행인이 여기서 날짜를 지어내지 않았습니다. 사이트 구조 개편까지 네 갈래의 순서와 날짜를 다음 관문에서 함께 정하겠습니다.'))))
 
 # 사이트 개편
 RENO = [
- ('증권기사 (유가증권·코스닥)', '공시봇 23개가 틀에 맞춰 찍은 짧은 기사', '검증 게이트를 통과한 LLM 공시기사 · 51종 → 105종', 'S8 · p1'),
+ ('증권기사 (유가증권·코스닥)', '공시봇 23개가 틀에 맞춰 찍은 짧은 기사', '검증 게이트를 통과한 LLM 공시기사 · 105종 자동 발행 설정 완료(11/19), 실제 게시 안정화 중', 'S8 · p1'),
  ('(없음)', '—', '기업 페이지 = Company Story — 공시 타임라인·주가 반응·카드', 'S7'),
  ('(없음)', '—', '관심종목 피드 · 이전 공시와 비교', 'p2'),
  ('과거 공시기사', '2025년 이전 27,262건이 그대로 공개', '1,210건 비공개 추천 · 원천 데이터와 백업은 보존 · 시범 10건 검증 완료', 'S8'),
@@ -314,12 +318,13 @@ B.append(lv('reno', 'money-robo.com 구조 레노베이션 — 지금 메뉴와 
 
 # 확인할 것
 RISK = [
- ('이미지 업로드 장애', 'Cafe24 WordPress 미디어 업로드 HTTP 500이 10/28부터 이어짐. 블로그에 못 실린 공시 13건 대기. 외부(호스팅) 복구 대기 중.', 'r'),
+ ('이미지 업로드 장애', 'Cafe24 WordPress 미디어 업로드 HTTP 500이 10/28부터 보고됨(11/5 리포트까지 미해결). 블로그에 못 실린 공시 13건 대기. 11/19 리포트에는 해결 여부가 적혀 있지 않음.', 'r'),
  ('코드 원격 저장소 없음', '8/27 점검에서 서비스 코드 저장소에 원격(origin)이 없음을 확인. 서버 한 곳에만 있는 상태라 백업 위치 결정이 필요.', 'r'),
  ('HTTP 운영', '관리자 쿠키 Secure 옵션을 꺼 둔 상태. HTTPS로 옮길 때 함께 켜야 함 (7/14).', 'a'),
  ('개발 도구·LLM 비용', 'Cursor 추가 한도 10달러 소진(9/17), 남은 개발에 5천만~1억 토큰 추정. OpenAI 사용량은 서버 자체 로그 기준이며 조직 Usage API는 미연동.', 'a'),
- ('보류한 공시', '주주총회소집공고(3/11 PENDING), 단기차입금 감소(필수 정보 부족), 감자 완료 1건(해석 기준 차이)은 검증을 위해 발행 보류.', 'a'),
- ('표기 불일치', '11/18 리포트 제목은 “51/108”, 본문 표는 전체 105종. 9/10 리포트는 카드 가치 유형 지원률을 97.93%와 96.94% 두 값으로 적음. 기준을 하나로 맞출 필요.', 'm'),
+ ('실제 게시 0건', '11/19 105종 설정 직후 첫 운영 실행에서 신규 게시 0건. 평가한 대표이사 변경 1건은 주가 차트 생성 실패로 보류. 공개 샘플 기사는 27건.', 'a'),
+ ('보류 기준', '유형은 모두 켜졌지만 개별 공시 보류 기준은 유지됨 — 단기차입금 감소의 이사회 결정일 누락(11/18), 감자 완료 1건의 해석 기준 차이(11/18), 정정공시·수치·차트 검증 실패 건. 3월에 보류했던 주주총회 소집공고는 11/19에 본문 추출을 보완해 105종에 포함.', 'a'),
+ ('표기 불일치', '11/18 리포트 제목의 “51/108”은 11/19 리포트에서 105/105종으로 정리됨. 9/10 리포트는 카드 가치 유형 지원률을 97.93%와 96.94% 두 값으로 적어 기준을 하나로 맞출 필요가 남음.', 'm'),
  ('계정 정보 기록', '일부 데일리 리포트 본문에 운영 계정 정보가 그대로 적혀 있음. 이 쪽에는 옮기지 않았고, 노션 원문 정리와 비밀번호 교체를 권함.', 'r'),
 ]
 rk = ''.join(f'<p class="{c}"><b>{esc(a)} · </b>{esc(b)}</p>' for a, b, c in RISK)
@@ -327,18 +332,18 @@ B.append(lv('risk', '확인할 것 — 발행인이 짚어 둔 위험과 빈칸'
 
 # 발행인 판단
 REV = [
- ('r1', '다음 단계 네 갈래(105종·관심종목·미장·개편)의 우선순위를 정한다', '김 연구원 리포트에는 방향만 있고 날짜가 없음'),
+ ('r1', '다음 단계 네 갈래(발행 안정화·관심종목·미장·개편)의 우선순위를 정한다', '김 연구원 리포트에는 방향만 있고 날짜가 없음'),
  ('r2', '과거 공시기사 1,210건 비공개 전환을 시범 10건 다음 단계로 넓힌다', '검색 유입 영향 확인 후'),
  ('r3', '서비스 코드의 원격 백업 저장소를 정한다', '회사 GitHub 조직 또는 별도 백업 서버'),
  ('r4', 'Cafe24 이미지 업로드 장애의 대안(호스팅 이전 또는 외부 이미지 저장소)을 검토한다', '미게시 13건이 걸려 있음'),
  ('r5', '개발 도구·LLM 월 예산을 따로 잡는다', 'Cursor 한도 소진으로 개발이 멈춘 전례'),
- ('r6', '자동 발행 하루 한도(expansion 4건, 단일판매 5건)를 유지할지 늘릴지 정한다', '품질 게이트는 그대로 두는 전제'),
+ ('r6', '자동 발행 하루 한도(확장 경로 합산 4건·회차당 1건, 단일판매 5건)를 유지할지 늘릴지 정한다', '품질 게이트는 그대로 두는 전제'),
 ]
 rv = ''.join(f'<div class="ri" data-id="{i}"><div class="rqq">{esc(q)}<small>{esc(n)}</small></div><div class="ro">'
              '<button type="button" data-v="agree" aria-pressed="false">동의</button><button type="button" data-v="fix" aria-pressed="false">수정 필요</button>'
              '<button type="button" data-v="talk" aria-pressed="false">논의</button><input type="text" placeholder="한 줄 메모" aria-label="메모"></div></div>' for i, q, n in REV)
 B.append(lv('review', '발행인 판단 — 다음 관문에서 정할 것',
- talk(('kim', '11/18 기준 미해결 사항 정리가 완료됐습니다. 이미지 업로드 장애로 13건 대기, 단기차입금 감소 등 보류 공시, 개발 도구 비용이 남아 있습니다. 이를 보고합니다.'),
+ talk(('kim', '11/19 기준 미해결 사항 정리가 완료됐습니다. 105종 설정 후 첫 실행의 실제 게시 0건, 이미지 업로드 장애로 13건 대기, 개발 도구 비용이 남아 있습니다. 이를 보고합니다.'),
         ('pub', '아래 여섯 가지를 다음 회의 안건으로 올립니다. 단추를 누르면 이 브라우저에만 저장되고, 아래 “판단 내보내기”로 글로 옮길 수 있습니다.'))
  + '<div class="review"><h4>안건 6개</h4>' + rv + '</div>'
  '<div class="ctrl"><button type="button" class="bt" id="revCopy">판단 내보내기 (복사)</button><button type="button" class="bt" id="revReset">초기화</button><span class="small muted" id="revMsg"></span></div>'))
@@ -379,7 +384,7 @@ allrefs = sorted({(a, t, u) for s in STAGES for a, t, u in s['refs']})
 TITLE_ONLY = {'2f617a4520ed805d8601d4e97c4b50b5','31217a4520ed80279e0ae3a90881d2d8','39717a4520ed80d080f2c84dbebfe43e','3b217a4520ed8067a751e61295b03396'}
 nbody = sum(1 for a,t,u in allrefs if u not in TITLE_ONLY)
 B.append(lv('src', '출처와 읽는 법',
- '<p>이 쪽의 모든 사실과 숫자는 김 연구원의 노션 데일리 리포트(M-Robo : Report › #2 › 데일리 리포트)에서 왔습니다. 2025-11-18부터 2026-11-18까지 139건 가운데 아래 '
+ '<p>이 쪽의 모든 사실과 숫자는 김 연구원의 노션 데일리 리포트(M-Robo : Report › #2 › 데일리 리포트)에서 왔습니다. 2025-11-18부터 2026-11-19까지 140건 가운데 아래 '
  f'{len(allrefs)}건을 스테이지의 근거로 골랐습니다. 그중 {nbody}건은 본문을 읽었고, {len(allrefs)-nbody}건은 제목과 날짜만 썼습니다. 나머지 리포트도 제목과 날짜로 스테이지를 나누는 데 썼습니다. 노션 링크는 사내 워크스페이스 권한이 있어야 열립니다.</p>'
  '<div class="tw"><table class="tb"><thead><tr><th>날짜</th><th>리포트</th><th>읽은 범위</th></tr></thead><tbody>'
  + ''.join(f'<tr><td class="num">{a}</td><td><a href="{NOTION}{u}" target="_blank" rel="noopener">{esc(t)}</a></td><td class="small">{"제목·날짜" if u in TITLE_ONLY else "본문"}</td></tr>' for a, t, u in allrefs)
@@ -389,7 +394,7 @@ B.append(lv('src', '출처와 읽는 법',
  '<li>개편 방향 표의 오른쪽 칸과 관문 이름은 발행인의 해석입니다. 원 리포트에 없는 날짜·수치는 넣지 않았습니다.</li>'
  '<li>테스트 서버 주소, 관리자·개발 도구 계정 정보는 의도적으로 옮기지 않았습니다.</li></ul>', req=False))
 
-B.append('<footer><div class="wrap"><p><b>공시봇에서 Company Story까지 — 발행인이 본 1년의 로드맵</b><br>글 · Money-Robo 발행인 &nbsp;|&nbsp; 결과물 · 김 연구원 (데일리 리포트 2025-11-18 ~ 2026-11-18) &nbsp;|&nbsp; 기준일 2026-11-18</p></div></footer>'
+B.append('<footer><div class="wrap"><p><b>공시봇에서 Company Story까지 — 발행인이 본 1년의 로드맵</b><br>글 · Money-Robo 발행인 &nbsp;|&nbsp; 결과물 · 김 연구원 (데일리 리포트 2025-11-18 ~ 2026-11-19) &nbsp;|&nbsp; 기준일 2026-11-19</p></div></footer>'
          '<button type="button" id="roboFab" aria-label="요청 모음으로 가기">' + avatar('box', 40) + '<span>수정 요청</span></button>')
 
 EXTRA = r"""
@@ -467,7 +472,7 @@ $$('.review .ri').forEach(function(ri){var id=ri.dataset.id,st=M.rev[id]||{};
  $$('button',ri).forEach(function(b){b.setAttribute('aria-pressed',st.v===b.dataset.v);b.onclick=function(){st.v=(st.v===b.dataset.v)?'':b.dataset.v;M.rev[id]=st;save();$$('button',ri).forEach(function(x){x.setAttribute('aria-pressed',st.v===x.dataset.v)})}});
  var inp=$('input',ri);inp.value=st.m||'';inp.oninput=function(){st.m=inp.value;M.rev[id]=st;save()}});
 var LB={agree:'동의',fix:'수정 필요',talk:'논의'};
-$('#revCopy').onclick=function(){var out=['[발행인 판단] Money-Robo 로드맵 (기준일 2026-11-18)'];
+$('#revCopy').onclick=function(){var out=['[발행인 판단] Money-Robo 로드맵 (기준일 2026-11-19)'];
  $$('.review .ri').forEach(function(ri,i){var st=M.rev[ri.dataset.id]||{};out.push((i+1)+'. '+$('.rqq',ri).firstChild.textContent+' — '+(LB[st.v]||'미정')+(st.m?' / '+st.m:''))});
  copy(out.join('\n'),function(t){$('#revMsg').textContent=t})};
 $('#revReset').onclick=function(){M.rev={};save();$$('.review button').forEach(function(b){b.setAttribute('aria-pressed','false')});$$('.review input').forEach(function(i){i.value=''});$('#revMsg').textContent='초기화했습니다.'};
@@ -498,7 +503,7 @@ $('#kgQ').oninput=function(){var q=this.value.trim().toLowerCase();$$('#kgList .
 
 page = ('<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
  '<title>공시봇에서 Company Story까지 — 발행인이 본 1년의 로드맵</title>'
- '<meta name="description" content="Money-Robo 발행인이 김 연구원의 데일리 리포트(2025-11-18 ~ 2026-11-18)를 여덟 스테이지 로드맵으로 정리한 브리핑">'
+ '<meta name="description" content="Money-Robo 발행인이 김 연구원의 데일리 리포트(2025-11-18 ~ 2026-11-19)를 여덟 스테이지 로드맵으로 정리한 브리핑">'
  '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
  '<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">'
  '<style>' + BASE + EXTRA + '</style></head><body>' + ''.join(B) + '<script>' + JS + '</script></body></html>')
